@@ -56,7 +56,7 @@ export default function StockPage() {
     fetchStockData();
   }, [key, timeKey, customizeRange]);
   return (
-    <div className='flex flex-col w-[760px] mb-6'>
+    <div className='flex flex-col w-[760px] pb-6'>
       <StockHeader stockKey={key} />
       <StockChart data={stockData} />
       <StockTable data={stockData} />

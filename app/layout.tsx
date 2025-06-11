@@ -11,8 +11,8 @@ export default function RootLayout({
     <html lang='en'>
       <body>
         <AppStateProvider>
-          <div className='flex flex-col items-center min-h-screen bg-[#ededed]'>
-            <div className='w-full flex-1 flex justify-center p-4 bg-white'>
+          <div className='flex flex-col items-center h-screen bg-[#ededed] overflow-auto'>
+            <div className='w-full flex justify-center p-4 bg-white sticky top-0'>
               <StockSelector />
             </div>
             {children}
