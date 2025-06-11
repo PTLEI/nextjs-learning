@@ -12,6 +12,7 @@ export default function AppStateProvider({
 }) {
   const [stockOptions, setStockOptions] = useState<{ label: string, value: string }[]>([]);
   const [timeKey, setTimeKey] = useState<string>('5');
+  const [customizeRange, setCustomizeRange] = useState<string[]>();
 
   useEffect(() => {
     fetchStockInfo().then(({data}) => {
@@ -40,6 +41,8 @@ export default function AppStateProvider({
         stockOptions,
         timeKey,
         setTimeKey,
+        customizeRange,
+        setCustomizeRange,
       }}
     >
       {children}

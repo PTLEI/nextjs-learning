@@ -2,6 +2,7 @@ import dayjs from 'dayjs';
 
 export const REVENUE_LABEL = '每月營收';
 export const REVENUE_GROWTH_RATE_LABEL = '單月營收年增率 (%)';
+export const CUSTOMIZE_KEY = 'customize'
 
 export function calculateMonthlyRevenueGrowthRate(data: { date: string; revenue: number }[]): { date: string; revenue: number; revenueStr: string; growthRate: number }[] {
   return data.map((currentMonth) => {
