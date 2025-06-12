@@ -12,7 +12,7 @@ export default function RootLayout({
       <body>
         <AppStateProvider>
           <div className='flex flex-col items-center h-screen bg-[#ededed] overflow-auto'>
-            <div className='w-full flex justify-center p-4 bg-white sticky top-0'>
+            <div className='self-stretch flex justify-center p-4 bg-white sticky top-0 z-50'>
               <StockSelector />
             </div>
             {children}
